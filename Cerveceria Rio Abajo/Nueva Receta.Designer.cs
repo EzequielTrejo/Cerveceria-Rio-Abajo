@@ -35,14 +35,14 @@ namespace Cerveceria_Rio_Abajo
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombreReceta = new System.Windows.Forms.TextBox();
             this.dgvVistaPrevia = new System.Windows.Forms.DataGridView();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnFinalizar = new System.Windows.Forms.Button();
-            this.cbListaProcesos = new System.Windows.Forms.ComboBox();
-            this.btnCrearNuevoProceso = new System.Windows.Forms.Button();
             this.NombreProceso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DuracionDelProceso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MateriaPrima = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CantidadMateria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnFinalizar = new System.Windows.Forms.Button();
+            this.cbListaProcesos = new System.Windows.Forms.ComboBox();
+            this.btnCrearNuevoProceso = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PBLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVistaPrevia)).BeginInit();
             this.SuspendLayout();
@@ -61,12 +61,13 @@ namespace Cerveceria_Rio_Abajo
             // btnAtras
             // 
             this.btnAtras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(66)))), ((int)(((byte)(106)))));
-            this.btnAtras.Location = new System.Drawing.Point(12, 12);
+            this.btnAtras.Location = new System.Drawing.Point(192, 12);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(40, 40);
+            this.btnAtras.Size = new System.Drawing.Size(174, 40);
             this.btnAtras.TabIndex = 12;
             this.btnAtras.Text = "Casa";
             this.btnAtras.UseVisualStyleBackColor = false;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
             // label1
             // 
@@ -100,6 +101,30 @@ namespace Cerveceria_Rio_Abajo
             this.dgvVistaPrevia.ReadOnly = true;
             this.dgvVistaPrevia.Size = new System.Drawing.Size(445, 150);
             this.dgvVistaPrevia.TabIndex = 16;
+            // 
+            // NombreProceso
+            // 
+            this.NombreProceso.HeaderText = "Nombre";
+            this.NombreProceso.Name = "NombreProceso";
+            this.NombreProceso.ReadOnly = true;
+            // 
+            // DuracionDelProceso
+            // 
+            this.DuracionDelProceso.HeaderText = "Duracion";
+            this.DuracionDelProceso.Name = "DuracionDelProceso";
+            this.DuracionDelProceso.ReadOnly = true;
+            // 
+            // MateriaPrima
+            // 
+            this.MateriaPrima.HeaderText = "Materia Prima";
+            this.MateriaPrima.Name = "MateriaPrima";
+            this.MateriaPrima.ReadOnly = true;
+            // 
+            // CantidadMateria
+            // 
+            this.CantidadMateria.HeaderText = "Cantidad Necesaria";
+            this.CantidadMateria.Name = "CantidadMateria";
+            this.CantidadMateria.ReadOnly = true;
             // 
             // btnAgregar
             // 
@@ -143,30 +168,7 @@ namespace Cerveceria_Rio_Abajo
             this.btnCrearNuevoProceso.TabIndex = 28;
             this.btnCrearNuevoProceso.Text = "Crear Nuevo Proceso";
             this.btnCrearNuevoProceso.UseVisualStyleBackColor = true;
-            // 
-            // NombreProceso
-            // 
-            this.NombreProceso.HeaderText = "Nombre";
-            this.NombreProceso.Name = "NombreProceso";
-            this.NombreProceso.ReadOnly = true;
-            // 
-            // DuracionDelProceso
-            // 
-            this.DuracionDelProceso.HeaderText = "Duracion";
-            this.DuracionDelProceso.Name = "DuracionDelProceso";
-            this.DuracionDelProceso.ReadOnly = true;
-            // 
-            // MateriaPrima
-            // 
-            this.MateriaPrima.HeaderText = "Materia Prima";
-            this.MateriaPrima.Name = "MateriaPrima";
-            this.MateriaPrima.ReadOnly = true;
-            // 
-            // CantidadMateria
-            // 
-            this.CantidadMateria.HeaderText = "Cantidad Necesaria";
-            this.CantidadMateria.Name = "CantidadMateria";
-            this.CantidadMateria.ReadOnly = true;
+            this.btnCrearNuevoProceso.Click += new System.EventHandler(this.btnCrearNuevoProceso_Click);
             // 
             // Nueva_Receta
             // 

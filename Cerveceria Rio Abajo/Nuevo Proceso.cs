@@ -13,11 +13,6 @@ namespace Cerveceria_Rio_Abajo
     public partial class Nuevo_Proceso : Form
     {
 
-        public static string ProcesoNombre { get; set; } = string.Empty;
-        public static string ProcesoDuracion { get; set; } = string.Empty;
-        public static string MateriaCantidad { get; set; } = string.Empty;
-        public static string RecetaNombre { get; set; } = string.Empty;
-
         public Nuevo_Proceso()
         {
             InitializeComponent();
@@ -25,10 +20,29 @@ namespace Cerveceria_Rio_Abajo
 
         public void Limpiar()
         {
+            txtTemperatura.Text = "";
             txtCantidad.Text = "";
             txtDuracion.Text = "";
             txtNombreProceso.Text = "";
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Nueva_Receta NR = new Nueva_Receta();
+
+            MessageBox.Show("Proceso Agregado Correctamente");
+            Limpiar();
+            NR.Show();
+            this.Hide();
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            Nueva_Receta NR = new Nueva_Receta();
+
+            Limpiar();
+            NR.Show();
+            this.Hide();
+        }
     }
 }

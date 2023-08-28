@@ -44,8 +44,9 @@ namespace Cerveceria_Rio_Abajo
             this.cbMateriaPrima = new System.Windows.Forms.ComboBox();
             this.btnAtras = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTemperatura = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PBLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,12 +174,13 @@ namespace Cerveceria_Rio_Abajo
             // btnAtras
             // 
             this.btnAtras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(66)))), ((int)(((byte)(106)))));
-            this.btnAtras.Location = new System.Drawing.Point(291, 12);
+            this.btnAtras.Location = new System.Drawing.Point(235, 12);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(40, 40);
+            this.btnAtras.Size = new System.Drawing.Size(96, 40);
             this.btnAtras.TabIndex = 28;
-            this.btnAtras.Text = "Casa";
+            this.btnAtras.Text = "Volver";
             this.btnAtras.UseVisualStyleBackColor = false;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
             // label6
             // 
@@ -190,12 +192,12 @@ namespace Cerveceria_Rio_Abajo
             this.label6.TabIndex = 29;
             this.label6.Text = "Temperatura";
             // 
-            // textBox1
+            // txtTemperatura
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 365);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(68, 20);
-            this.textBox1.TabIndex = 30;
+            this.txtTemperatura.Location = new System.Drawing.Point(12, 365);
+            this.txtTemperatura.Name = "txtTemperatura";
+            this.txtTemperatura.Size = new System.Drawing.Size(68, 20);
+            this.txtTemperatura.TabIndex = 30;
             // 
             // label7
             // 
@@ -207,14 +209,26 @@ namespace Cerveceria_Rio_Abajo
             this.label7.TabIndex = 31;
             this.label7.Text = "Cº";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(66)))), ((int)(((byte)(106)))));
+            this.button1.Location = new System.Drawing.Point(235, 358);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(96, 40);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "Finalizar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Nuevo_Proceso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(343, 410);
             this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTemperatura);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.cbMateriaPrima);
@@ -253,7 +267,8 @@ namespace Cerveceria_Rio_Abajo
         private System.Windows.Forms.ComboBox cbMateriaPrima;
         private System.Windows.Forms.Button btnAtras;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTemperatura;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button1;
     }
 }

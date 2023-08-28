@@ -16,5 +16,23 @@ namespace Cerveceria_Rio_Abajo
         {
             InitializeComponent();
         }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            Produccion Prod = new Produccion();
+
+            this.Close();
+        }
+
+        private void ProduccionDetalles_Load(object sender, EventArgs e)
+        {
+            CargarDGV();
+        }
+
+        public void CargarDGV()
+        {
+
+        }
+
     }
 }

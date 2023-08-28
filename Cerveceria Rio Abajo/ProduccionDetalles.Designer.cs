@@ -33,18 +33,18 @@ namespace Cerveceria_Rio_Abajo
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProduccionDetalles));
             this.PBLogo = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.btnAtras = new System.Windows.Forms.Button();
             this.Proceso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoraInic = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoraFin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FinReal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MateriaPrima = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.MateriaPrimav2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CantDisp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.btnAtras = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PBLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -79,31 +79,6 @@ namespace Cerveceria_Rio_Abajo
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(644, 150);
             this.dataGridView1.TabIndex = 4;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MateriaPrimav2,
-            this.Cantidad,
-            this.CantDisp});
-            this.dataGridView2.Location = new System.Drawing.Point(12, 261);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(343, 150);
-            this.dataGridView2.TabIndex = 5;
-            // 
-            // btnAtras
-            // 
-            this.btnAtras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(66)))), ((int)(((byte)(106)))));
-            this.btnAtras.Location = new System.Drawing.Point(748, 12);
-            this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(40, 40);
-            this.btnAtras.TabIndex = 11;
-            this.btnAtras.Text = "Casa";
-            this.btnAtras.UseVisualStyleBackColor = false;
             // 
             // Proceso
             // 
@@ -141,6 +116,21 @@ namespace Cerveceria_Rio_Abajo
             this.MateriaPrima.Name = "MateriaPrima";
             this.MateriaPrima.ReadOnly = true;
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MateriaPrimav2,
+            this.Cantidad,
+            this.CantDisp});
+            this.dataGridView2.Location = new System.Drawing.Point(12, 261);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.Size = new System.Drawing.Size(343, 150);
+            this.dataGridView2.TabIndex = 5;
+            // 
             // MateriaPrimav2
             // 
             this.MateriaPrimav2.HeaderText = "Materia Prima";
@@ -159,6 +149,17 @@ namespace Cerveceria_Rio_Abajo
             this.CantDisp.Name = "CantDisp";
             this.CantDisp.ReadOnly = true;
             // 
+            // btnAtras
+            // 
+            this.btnAtras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(66)))), ((int)(((byte)(106)))));
+            this.btnAtras.Location = new System.Drawing.Point(357, 12);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(164, 40);
+            this.btnAtras.TabIndex = 11;
+            this.btnAtras.Text = "Volver";
+            this.btnAtras.UseVisualStyleBackColor = false;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
+            // 
             // ProduccionDetalles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,6 +172,7 @@ namespace Cerveceria_Rio_Abajo
             this.Controls.Add(this.PBLogo);
             this.Name = "ProduccionDetalles";
             this.Text = "ProduccionDetalles";
+            this.Load += new System.EventHandler(this.ProduccionDetalles_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PBLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();

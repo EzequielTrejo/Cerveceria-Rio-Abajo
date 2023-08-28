@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cerveceria_Rio_Abajo
 {
-    public partial class Facturacion : Form
+    public partial class FacturacionProveedores : Form
     {
-        public Facturacion()
+        public FacturacionProveedores()
         {
             InitializeComponent();
         }

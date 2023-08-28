@@ -45,7 +45,7 @@ namespace Cerveceria_Rio_Abajo
 
         private void btnFacturacion_Click(object sender, EventArgs e) //Boton Facturacion
         {
-            Facturacion Fact = new Facturacion();
+            FacturacionProveedores Fact = new FacturacionProveedores();
 
             Fact.Show();
             this.Hide();

@@ -31,7 +31,22 @@ namespace Cerveceria_Rio_Abajo
         private void btnFinalizar_Click(object sender, EventArgs e)
         {
 
-        }       
+        }
 
+        private void btnCrearNuevoProceso_Click(object sender, EventArgs e)
+        {
+            Nuevo_Proceso NP = new Nuevo_Proceso();
+
+            NP.Show();
+            this.Hide();
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            Cocina C = new Cocina();
+
+            C.Show();
+            this.Hide();
+        }
     }
 }

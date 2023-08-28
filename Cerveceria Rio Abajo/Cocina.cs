@@ -51,7 +51,7 @@ namespace Cerveceria_Rio_Abajo
 
         private void btnFacturacion_Click(object sender, EventArgs e)
         {
-            Facturacion Fact = new Facturacion();
+            FacturacionProveedores Fact = new FacturacionProveedores();
 
             Fact.Show();
             this.Hide();
@@ -63,10 +63,18 @@ namespace Cerveceria_Rio_Abajo
 
         private void btnCocinar_Click(object sender, EventArgs e)
         {
-            Produccion Prod = new Produccion();
+            if (NuevoProceso(cbRecetas.SelectedItem.ToString()) == "1")
+            {
+                Produccion Prod = new Produccion();
 
-            Prod.Show();
-            this.Hide();
+                Prod.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("No se pudo iniciar el Proceso");
+            }
+
         }
 
         private void btnReceta_Click(object sender, EventArgs e)
@@ -78,6 +86,13 @@ namespace Cerveceria_Rio_Abajo
         }
 
         public string NuevoProceso(string Receta)
+        {
+
+            string Ok = "";
+            return Ok;
+        }
+
+        public string NuevaReceta(string Receta)
         {
 
             string Ok = "";

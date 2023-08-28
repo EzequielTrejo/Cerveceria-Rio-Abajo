@@ -65,7 +65,9 @@ namespace Cerveceria_Rio_Abajo
             this.cbRecetas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRecetas.FormattingEnabled = true;
             this.cbRecetas.Items.AddRange(new object[] {
-            "Seleccione una Receta"});
+            "Seleccione una Receta",
+            "1",
+            "2"});
             this.cbRecetas.Location = new System.Drawing.Point(12, 75);
             this.cbRecetas.Name = "cbRecetas";
             this.cbRecetas.Size = new System.Drawing.Size(121, 21);
@@ -196,6 +198,7 @@ namespace Cerveceria_Rio_Abajo
             this.Controls.Add(this.cbRecetas);
             this.Controls.Add(this.PBLogo);
             this.Name = "Cocina";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cocina";
             this.Load += new System.EventHandler(this.Cocina_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PBLogo)).EndInit();

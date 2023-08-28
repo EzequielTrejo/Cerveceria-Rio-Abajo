@@ -55,12 +55,17 @@ namespace Cerveceria_Rio_Abajo
             this.Hide();
         }
 
-        private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Facturacion Fact = new Facturacion();
+            Facturacion_Clientes Fc = new Facturacion_Clientes();
 
-            Fact.Show();
+            Fc.Show();
             this.Hide();
+        }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
         #endregion
@@ -69,5 +74,6 @@ namespace Cerveceria_Rio_Abajo
         {
             Application.Exit();
         }
+
     }
 }

@@ -51,7 +51,7 @@ namespace Cerveceria_Rio_Abajo
 
         private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Facturacion Fact = new Facturacion();
+            FacturacionProveedores Fact = new FacturacionProveedores();
 
             Fact.Show();
             this.Hide();
@@ -64,5 +64,11 @@ namespace Cerveceria_Rio_Abajo
 
         }
 
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ProduccionDetalles PD = new ProduccionDetalles();
+
+            PD.Show();
+        }
     }
 }
