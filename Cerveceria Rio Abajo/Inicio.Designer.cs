@@ -35,10 +35,10 @@ namespace Cerveceria_Rio_Abajo
             this.produccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cocinaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PBLogo = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.Button();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PBLogo = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.MFlotante.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PBLogo)).BeginInit();
             this.SuspendLayout();
@@ -91,6 +91,20 @@ namespace Cerveceria_Rio_Abajo
             this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(81, 35);
             this.facturacionToolStripMenuItem.Text = "Facturacion";
             // 
+            // clienteToolStripMenuItem
+            // 
+            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.clienteToolStripMenuItem.Text = "Clientes";
+            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
+            // 
+            // proveedoresToolStripMenuItem
+            // 
+            this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.proveedoresToolStripMenuItem.Text = "Proveedores";
+            this.proveedoresToolStripMenuItem.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
+            // 
             // PBLogo
             // 
             this.PBLogo.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -113,20 +127,6 @@ namespace Cerveceria_Rio_Abajo
             this.btnCerrar.Text = "X";
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // clienteToolStripMenuItem
-            // 
-            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.clienteToolStripMenuItem.Text = "Clientes";
-            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
-            // 
-            // proveedoresToolStripMenuItem
-            // 
-            this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.proveedoresToolStripMenuItem.Text = "Proveedores";
-            this.proveedoresToolStripMenuItem.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
             // 
             // Frm1
             // 

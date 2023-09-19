@@ -12,14 +12,6 @@ namespace Cerveceria_Rio_Abajo
 {
     public partial class Frm1 : Form
     {
-
-        #region Diccionario
-        /// <summary>
-        /// 
-        /// 
-        /// </summary>
-#endregion
-
         public Frm1()
         {
             InitializeComponent();
@@ -65,7 +57,10 @@ namespace Cerveceria_Rio_Abajo
 
         private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            FacturacionProveedores Fc = new FacturacionProveedores();
 
+            Fc.Show();
+            this.Hide();
         }
 
         #endregion

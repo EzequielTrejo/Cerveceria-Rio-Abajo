@@ -50,22 +50,24 @@ namespace Cerveceria_Rio_Abajo
             this.Entregados = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAtras = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.btnStock = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnProduccion = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnCocina = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnFacturacion = new System.Windows.Forms.ToolStripMenuItem();
             this.txtBuscarMateria = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuscarProducto = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtBuscarContenedor = new System.Windows.Forms.TextBox();
+            this.MFlotante = new System.Windows.Forms.MenuStrip();
+            this.btnStock = new System.Windows.Forms.ToolStripMenuItem();
+            this.produccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cocinaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.facturacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMateriaPrima)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductoFinal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.MFlotante.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -256,51 +258,6 @@ namespace Cerveceria_Rio_Abajo
             this.btnAtras.UseVisualStyleBackColor = false;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.menuStrip1.AutoSize = false;
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(99)))), ((int)(((byte)(139)))));
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnStock,
-            this.btnProduccion,
-            this.btnCocina,
-            this.btnFacturacion});
-            this.menuStrip1.Location = new System.Drawing.Point(297, 9);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(288, 39);
-            this.menuStrip1.TabIndex = 10;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // btnStock
-            // 
-            this.btnStock.Name = "btnStock";
-            this.btnStock.Size = new System.Drawing.Size(48, 35);
-            this.btnStock.Text = "Stock";
-            // 
-            // btnProduccion
-            // 
-            this.btnProduccion.Name = "btnProduccion";
-            this.btnProduccion.Size = new System.Drawing.Size(80, 35);
-            this.btnProduccion.Text = "Produccion";
-            this.btnProduccion.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
-            // 
-            // btnCocina
-            // 
-            this.btnCocina.Name = "btnCocina";
-            this.btnCocina.Size = new System.Drawing.Size(56, 35);
-            this.btnCocina.Text = "Cocina";
-            this.btnCocina.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
-            // 
-            // btnFacturacion
-            // 
-            this.btnFacturacion.Name = "btnFacturacion";
-            this.btnFacturacion.Size = new System.Drawing.Size(81, 35);
-            this.btnFacturacion.Text = "Facturacion";
-            this.btnFacturacion.Click += new System.EventHandler(this.btnFacturacion_Click);
-            // 
             // txtBuscarMateria
             // 
             this.txtBuscarMateria.Location = new System.Drawing.Point(413, 172);
@@ -355,19 +312,78 @@ namespace Cerveceria_Rio_Abajo
             this.txtBuscarContenedor.Size = new System.Drawing.Size(202, 20);
             this.txtBuscarContenedor.TabIndex = 16;
             // 
+            // MFlotante
+            // 
+            this.MFlotante.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.MFlotante.AutoSize = false;
+            this.MFlotante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(99)))), ((int)(((byte)(139)))));
+            this.MFlotante.Dock = System.Windows.Forms.DockStyle.None;
+            this.MFlotante.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
+            this.MFlotante.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnStock,
+            this.produccionToolStripMenuItem,
+            this.cocinaToolStripMenuItem,
+            this.facturacionToolStripMenuItem});
+            this.MFlotante.Location = new System.Drawing.Point(297, 9);
+            this.MFlotante.Name = "MFlotante";
+            this.MFlotante.Size = new System.Drawing.Size(288, 39);
+            this.MFlotante.TabIndex = 18;
+            this.MFlotante.Text = "menuStrip1";
+            // 
+            // btnStock
+            // 
+            this.btnStock.Name = "btnStock";
+            this.btnStock.Size = new System.Drawing.Size(48, 35);
+            this.btnStock.Text = "Stock";
+            // 
+            // produccionToolStripMenuItem
+            // 
+            this.produccionToolStripMenuItem.Name = "produccionToolStripMenuItem";
+            this.produccionToolStripMenuItem.Size = new System.Drawing.Size(80, 35);
+            this.produccionToolStripMenuItem.Text = "Produccion";
+            // 
+            // cocinaToolStripMenuItem
+            // 
+            this.cocinaToolStripMenuItem.Name = "cocinaToolStripMenuItem";
+            this.cocinaToolStripMenuItem.Size = new System.Drawing.Size(56, 35);
+            this.cocinaToolStripMenuItem.Text = "Cocina";
+            // 
+            // facturacionToolStripMenuItem
+            // 
+            this.facturacionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clienteToolStripMenuItem,
+            this.proveedoresToolStripMenuItem});
+            this.facturacionToolStripMenuItem.Name = "facturacionToolStripMenuItem";
+            this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(81, 35);
+            this.facturacionToolStripMenuItem.Text = "Facturacion";
+            // 
+            // clienteToolStripMenuItem
+            // 
+            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clienteToolStripMenuItem.Text = "Clientes";
+            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
+            // 
+            // proveedoresToolStripMenuItem
+            // 
+            this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.proveedoresToolStripMenuItem.Text = "Proveedores";
+            this.proveedoresToolStripMenuItem.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
+            // 
             // Stock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(828, 663);
             this.ControlBox = false;
+            this.Controls.Add(this.MFlotante);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtBuscarContenedor);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBuscarProducto);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtBuscarMateria);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.lblContenedores);
@@ -384,8 +400,8 @@ namespace Cerveceria_Rio_Abajo
             ((System.ComponentModel.ISupportInitialize)(this.dgvMateriaPrima)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductoFinal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.MFlotante.ResumeLayout(false);
+            this.MFlotante.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -413,16 +429,18 @@ namespace Cerveceria_Rio_Abajo
         private System.Windows.Forms.DataGridViewTextBoxColumn Entregados;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total;
         private System.Windows.Forms.Button btnAtras;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem btnStock;
-        private System.Windows.Forms.ToolStripMenuItem btnProduccion;
-        private System.Windows.Forms.ToolStripMenuItem btnCocina;
-        private System.Windows.Forms.ToolStripMenuItem btnFacturacion;
         private System.Windows.Forms.TextBox txtBuscarMateria;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBuscarProducto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtBuscarContenedor;
+        private System.Windows.Forms.MenuStrip MFlotante;
+        private System.Windows.Forms.ToolStripMenuItem btnStock;
+        private System.Windows.Forms.ToolStripMenuItem produccionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cocinaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem facturacionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem proveedoresToolStripMenuItem;
     }
 }

@@ -15,7 +15,6 @@ namespace Cerveceria_Rio_Abajo
         public Stock()
         {
             InitializeComponent();
-            //Frm1 Inicio = new Frm1();
         }
 
         public void btnAtras_Click(object sender, EventArgs e)
@@ -43,11 +42,19 @@ namespace Cerveceria_Rio_Abajo
             this.Hide();
         }
 
-        private void btnFacturacion_Click(object sender, EventArgs e) //Boton Facturacion
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FacturacionProveedores Fact = new FacturacionProveedores();
+            FacturacionProveedores Fc = new FacturacionProveedores();
 
-            Fact.Show();
+            Fc.Show();
+            this.Hide();
+        }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Facturacion_Clientes Fc = new Facturacion_Clientes();
+
+            Fc.Show();
             this.Hide();
         }
 
@@ -63,6 +70,5 @@ namespace Cerveceria_Rio_Abajo
         {
 
         }
-
     }
 }
