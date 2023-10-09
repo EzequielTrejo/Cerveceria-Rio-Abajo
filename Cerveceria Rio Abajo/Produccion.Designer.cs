@@ -32,14 +32,6 @@ namespace Cerveceria_Rio_Abajo
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Produccion));
             this.PBLogo = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.RecetaEnProceso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProcesoActivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.InicioDelProceso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FinalizaProceso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CantidadMateria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TiempoRestante = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EstadoDeLaReceta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Listo = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnAtras = new System.Windows.Forms.Button();
             this.MFlotante = new System.Windows.Forms.MenuStrip();
             this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,6 +45,13 @@ namespace Cerveceria_Rio_Abajo
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblMateriaPrima = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.RecetaEnProceso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProcesoActivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InicioDelProceso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FinalizaProceso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TiempoRestante = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EstadoDeLaReceta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Listo = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.PBLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.MFlotante.SuspendLayout();
@@ -80,66 +79,15 @@ namespace Cerveceria_Rio_Abajo
             this.ProcesoActivo,
             this.InicioDelProceso,
             this.FinalizaProceso,
-            this.CantidadMateria,
             this.TiempoRestante,
             this.EstadoDeLaReceta,
             this.Listo});
             this.dataGridView1.Location = new System.Drawing.Point(12, 90);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(744, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(695, 150);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
-            // 
-            // RecetaEnProceso
-            // 
-            this.RecetaEnProceso.HeaderText = "Receta En Proceso";
-            this.RecetaEnProceso.Name = "RecetaEnProceso";
-            this.RecetaEnProceso.ReadOnly = true;
-            // 
-            // ProcesoActivo
-            // 
-            this.ProcesoActivo.HeaderText = "Proceso Activo";
-            this.ProcesoActivo.Name = "ProcesoActivo";
-            this.ProcesoActivo.ReadOnly = true;
-            // 
-            // InicioDelProceso
-            // 
-            this.InicioDelProceso.HeaderText = "Inicio Del Proceso";
-            this.InicioDelProceso.Name = "InicioDelProceso";
-            this.InicioDelProceso.ReadOnly = true;
-            // 
-            // FinalizaProceso
-            // 
-            this.FinalizaProceso.HeaderText = "Finalizacion Del Proceso";
-            this.FinalizaProceso.Name = "FinalizaProceso";
-            this.FinalizaProceso.ReadOnly = true;
-            // 
-            // CantidadMateria
-            // 
-            this.CantidadMateria.HeaderText = "Cantidad De Materia";
-            this.CantidadMateria.Name = "CantidadMateria";
-            this.CantidadMateria.ReadOnly = true;
-            this.CantidadMateria.Width = 50;
-            // 
-            // TiempoRestante
-            // 
-            this.TiempoRestante.HeaderText = "Tiempo Restante";
-            this.TiempoRestante.Name = "TiempoRestante";
-            this.TiempoRestante.ReadOnly = true;
-            // 
-            // EstadoDeLaReceta
-            // 
-            this.EstadoDeLaReceta.HeaderText = "Estado Actual";
-            this.EstadoDeLaReceta.Name = "EstadoDeLaReceta";
-            this.EstadoDeLaReceta.ReadOnly = true;
-            // 
-            // Listo
-            // 
-            this.Listo.HeaderText = "Listo";
-            this.Listo.Name = "Listo";
-            this.Listo.ReadOnly = true;
-            this.Listo.Width = 50;
             // 
             // btnAtras
             // 
@@ -261,6 +209,49 @@ namespace Cerveceria_Rio_Abajo
             this.label1.TabIndex = 14;
             this.label1.Text = "Recetas Finalizadas";
             // 
+            // RecetaEnProceso
+            // 
+            this.RecetaEnProceso.HeaderText = "Receta En Proceso";
+            this.RecetaEnProceso.Name = "RecetaEnProceso";
+            this.RecetaEnProceso.ReadOnly = true;
+            // 
+            // ProcesoActivo
+            // 
+            this.ProcesoActivo.HeaderText = "Proceso Activo";
+            this.ProcesoActivo.Name = "ProcesoActivo";
+            this.ProcesoActivo.ReadOnly = true;
+            // 
+            // InicioDelProceso
+            // 
+            this.InicioDelProceso.HeaderText = "Inicio Del Proceso";
+            this.InicioDelProceso.Name = "InicioDelProceso";
+            this.InicioDelProceso.ReadOnly = true;
+            // 
+            // FinalizaProceso
+            // 
+            this.FinalizaProceso.HeaderText = "Finalizacion Del Proceso";
+            this.FinalizaProceso.Name = "FinalizaProceso";
+            this.FinalizaProceso.ReadOnly = true;
+            // 
+            // TiempoRestante
+            // 
+            this.TiempoRestante.HeaderText = "Tiempo Restante";
+            this.TiempoRestante.Name = "TiempoRestante";
+            this.TiempoRestante.ReadOnly = true;
+            // 
+            // EstadoDeLaReceta
+            // 
+            this.EstadoDeLaReceta.HeaderText = "Estado Actual";
+            this.EstadoDeLaReceta.Name = "EstadoDeLaReceta";
+            this.EstadoDeLaReceta.ReadOnly = true;
+            // 
+            // Listo
+            // 
+            this.Listo.HeaderText = "Listo";
+            this.Listo.Name = "Listo";
+            this.Listo.ReadOnly = true;
+            this.Listo.Width = 50;
+            // 
             // Produccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,7 +300,6 @@ namespace Cerveceria_Rio_Abajo
         private System.Windows.Forms.DataGridViewTextBoxColumn ProcesoActivo;
         private System.Windows.Forms.DataGridViewTextBoxColumn InicioDelProceso;
         private System.Windows.Forms.DataGridViewTextBoxColumn FinalizaProceso;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CantidadMateria;
         private System.Windows.Forms.DataGridViewTextBoxColumn TiempoRestante;
         private System.Windows.Forms.DataGridViewTextBoxColumn EstadoDeLaReceta;
         private System.Windows.Forms.DataGridViewButtonColumn Listo;

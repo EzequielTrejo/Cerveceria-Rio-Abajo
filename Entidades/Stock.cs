@@ -45,9 +45,14 @@ namespace Entidades
         public int CantidadContenedores1 { get => CantidadContenedores; set => CantidadContenedores = value; }
         public int TotalContenedores1 { get => TotalContenedores; set => TotalContenedores = value; }
 
+        //Global
+        private int stock_Id;
+
+        public int Stock_Id { get => stock_Id; set => stock_Id = value; }
+
         public Stock() { }
 
-        public Stock( /*1*/ string MP, int CMP, DateTime FI, int NF, string UM, /*2*/ string PF, int CP, int NL, DateTime FF, string UMPF, /*3*/ string C, int TC, string UMC, int CC)
+        public Stock( /*1*/ string MP, int CMP, DateTime FI, int NF, string UM, /*2*/ string PF, int CP, int NL, DateTime FF, string UMPF, /*3*/ string C, int TC, string UMC, int CC, /*4*/ int SI)
         {
             //1
             MateriaPrima1 = MP;
@@ -66,6 +71,8 @@ namespace Entidades
             CantidadContenedores1 = CC;
             UnidadMedidaContenedores1 = UMC;
             TotalContenedores1 = TC;
+            //4
+            Stock_Id = SI;
         }
 
     }

@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatosConexionDB.cs" />
+    <Compile Include="DatosNReceta.cs" />
+    <Compile Include="DatosProduccion.cs" />
     <Compile Include="DatosStock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

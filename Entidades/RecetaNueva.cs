@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class RecetaNueva
+    public class RecetaNueva
     {
         private string NombreReceta;
         private string ListaProcesos;

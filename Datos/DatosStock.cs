@@ -44,17 +44,21 @@ namespace Datos
                     switch (Nivel)
                     {
                         case "MP":
-
+                            orden = "update stock set nombre_stock = '" + objStock.MateriaPrima1 + "', cantidad_stock = '" + objStock.CantidadMateria1 + "', Unidad_Medida = '" + objStock.UnidadMedida1 +
+                            "', numero_factura = '" + objStock.NumeroFactura1 + "'" + "Where IdStock = '" + objStock.Stock_Id + "';";
+                            break;
+                        case "PF":
+                            orden = "update stock set nombre_stock = '" + objStock.ProductoFinal1 + "', cantidad_stock = '" + objStock.CantidadProducto1 +
+                                "', Unidad_Medida = '" + objStock.UnidadMedidaProducto1 + "', numero_factura = '" + objStock.NºLote1 + "'" + "Where IdStock = '" + objStock.Stock_Id + "';";
+                            break;
+                        case "C":
+                            orden = "update stock set nombre_stock = '" + objStock.Contenedor1 + "', cantidad_stock = '" + objStock.CantidadContenedores1 +
+                                "', Unidad_Medida = '" + objStock.UnidadMedidaContenedores1 + "', numero_factura = '" + objStock.NºLote1 + "'" + "Where IdStock = '" + objStock.Stock_Id + "';";
                             break;
                     }
-                    orden = "update Alumnos set Nombre = '" + objStock.Nombre + "', Apellido = '" + objStock.Apellido + "', Genero = '" + objStock.Genero +
-                            "', DNI = '" + objStock.DNI + "'," + " Fecha_De_Naciemiento = '" + FechaN + "', Edad = '" + objStock.Edad +
-                            "', LegajoAlumno = '" + objStock.LegajoAlumno + "', Carrera = '" + objStock.Carrera + "'," + " Fecha_De_Inscripcion = '" +
-                            FechaI + "'" +
-                            "Where AlumnoId = '" + objStock.AlumnoId + "';";
                     break;
                 case "Borrar":
-                    orden = "delete from Alumnos where AlumnoId = '" + delete + "';";
+                    orden = "delete from stock where StockId = '" + delete + "';";
                     break;
             }
 
